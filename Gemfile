@@ -36,3 +36,9 @@ group :test do
   gem 'rspec-rails'
 end
 
+group :development do
+  gem 'foreman', require: false
+  gem 'dotenv'
+  gem 'slanger', github: 'hubertlepicki/slanger', require: false
+end
+
