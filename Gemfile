@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.4'
 gem 'pg'
 gem 'sequel-rails'
+gem 'slim'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
@@ -19,7 +20,7 @@ gem 'sdoc', '~> 0.4.0',        group: :doc
 gem 'spring',      group: :development
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # Use unicorn as the app server
 # gem 'unicorn'
@@ -30,10 +31,15 @@ gem 'spring',      group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+group :development, :test do
+  gem 'pry'
+end
+
 group :test do
   gem 'capybara'
   gem 'selenium-webdriver'
   gem 'rspec-rails'
+  gem 'database_cleaner'
 end
 
 group :development do

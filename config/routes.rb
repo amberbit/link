@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  root to: "home#index"
+
+  resource :dashboard, only: [:show]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
