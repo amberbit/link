@@ -5,7 +5,7 @@
 
       div.panel-body
         form
-          .alert.alert-danger= t 'homepage.login_error'
+          .alert.alert-danger(ng-show='form.error')= t 'homepage.login_error'
           .form-group
             label for='inputEmail'= t 'homepage.email'
             input(type='email' class='form-control' id='inputEmail' autofocus)
