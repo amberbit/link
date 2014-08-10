@@ -4,7 +4,7 @@
       div.panel-heading= t 'homepage.log_in_prompt'
 
       div.panel-body
-        form
+        form ng-controller='LoginController'
           .alert.alert-danger(ng-show='form.error')= t 'homepage.login_error'
           .form-group
             label for='inputEmail'= t 'homepage.email'
@@ -15,7 +15,7 @@
             input type='password' class='form-control' id='inputPassword'
 
           .form-group
-            a.btn.btn-primary.btn-lg.btn-block(href='')= t 'homepage.log_in'
+            a.btn.btn-primary.btn-lg.btn-block(href='' ng-click='submit()')= t 'homepage.log_in'
 
 
 

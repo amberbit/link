@@ -5,9 +5,11 @@ html
     meta name='viewport' content='width=device-width, initial-scale=1'
 
     meta name='fragment' content='!'
+    = javascript_include_tag 'public/application'
     = stylesheet_link_tag 'public/application', media: 'all'
 
-  body ng-app='public'
+
+  body ng-app='Public'
     = render 'public/navigation'
 
     .container

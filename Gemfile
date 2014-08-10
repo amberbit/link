@@ -6,11 +6,13 @@ gem 'rails', '4.1.4'
 gem 'pg'
 gem 'sequel-rails'
 gem 'slim'
+gem 'virtus'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'angular-rails', '~> 0.0.12'
+gem 'jquery-rails'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
