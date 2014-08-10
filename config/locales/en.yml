@@ -23,5 +23,7 @@ en:
   app_name: "Link"
   homepage:
     log_in: "Log in"
+    log_in_prompt: "Please log in"
     email: "E-mail"
     password: "Password"
+    login_error: 'Invalid e-mail or password'

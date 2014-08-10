@@ -1,21 +1,21 @@
 .row
   .col-xs-12.col-sm-6.col-sm-offset-3
     div.panel.panel-primary
-      div.panel-heading= t 'homepage.log_in'
-        h3= t 'homepage.log_in'
+      div.panel-heading= t 'homepage.log_in_prompt'
 
       div.panel-body
         form
+          .alert.alert-danger= t 'homepage.login_error'
           .form-group
             label for='inputEmail'= t 'homepage.email'
-            input type='email' class='form-control' id='inputEmail'
+            input(type='email' class='form-control' id='inputEmail' autofocus)
 
           .form-group
             label for='inputPassword'= t 'homepage.password'
             input type='password' class='form-control' id='inputPassword'
 
           .form-group
-            a.btn.btn-primary.btn-lg.btn-block= t 'homepage.log_in'
+            a.btn.btn-primary.btn-lg.btn-block(href='')= t 'homepage.log_in'
 
 
 
