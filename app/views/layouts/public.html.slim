@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title= t("app_name")
+    meta name="viewport" content="width=device-width, initial-scale=1"
+    link rel="icon" type="image/png" href="#{asset_path('favicon_transparent_32.png')}"
+
+    meta name="fragment" content="!"
+    = stylesheet_link_tag "public/application", media: "all"
+
+    - if request.ssl?
+      script src="https://d3dy5gmtp8yhk7.cloudfront.net/2.2/pusher.min.js" type="text/javascript"
+    - else
+      script src="http://js.pusher.com/2.2/pusher.min.js" type="text/javascript"
+
+  body
+    = render 'public/navigation'
+
+    .container
+      = yield
+
