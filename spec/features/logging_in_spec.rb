@@ -24,7 +24,7 @@ describe 'Logging in', type: :feature do
       fill_in 'Password', with: 'asdf1234'
       click_link 'Log in'
 
-      expect(page).to have_content('Invalid e-mail or password')
+      expect(page).not_to have_content('Invalid e-mail or password')
       expect(current_path).to eq("/dashboard")
     end
   end

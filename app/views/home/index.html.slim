@@ -8,11 +8,11 @@
           .alert.alert-danger(ng-show='form.error')= t 'homepage.login_error'
           .form-group
             label for='inputEmail'= t 'homepage.email'
-            input(type='email' class='form-control' id='inputEmail' autofocus)
+            input(type='email' class='form-control' id='inputEmail' autofocus ng-model='form.email')
 
           .form-group
             label for='inputPassword'= t 'homepage.password'
-            input type='password' class='form-control' id='inputPassword'
+            input type='password' class='form-control' id='inputPassword' ng-model='form.password'
 
           .form-group
             a.btn.btn-primary.btn-lg.btn-block(href='' ng-click='submit()')= t 'homepage.log_in'

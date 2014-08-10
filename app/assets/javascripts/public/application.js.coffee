@@ -21,7 +21,14 @@ Public.controller "LoginController", ($scope, $http) ->
   $scope.form = {error: false, email: "", password: ""}
 
   $scope.submit = ->
-    $scope.form.error = true
+    req = $http.post '/api/session', $scope.form
+    req.success () ->
+      $scope.form.error = false
+      window.location = '/dashboard'
+
+    req.error () ->
+      $scope.form.error = true
+
 
 
 
